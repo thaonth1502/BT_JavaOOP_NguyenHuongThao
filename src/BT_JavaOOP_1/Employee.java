@@ -1,42 +1,15 @@
 package BT_JavaOOP_1;
 
 public class Employee {
-    String name;
-    int age;
-    String phone;
-    String address;
-
-    public Employee(){
-
-    }
-
-    public Employee(String name, int age, String phone, String address){
-        this.name = name;
-        this.age = age;
-        this.phone = phone;
-        this.address = address;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
+    String name = "Nguyen Huong Thao";
+    int age = 35;
+    String phone = "0350099019";
+    String address = "Hanoi";
 
     public void getInfo(){
-        System.out.println("Name: " + getName());
-        System.out.println("Age: " + getAge());
-        System.out.println("Phone: " + getPhone());
-        System.out.println("Address: " + getAddress());
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Phone: " + phone);
+        System.out.println("Address: " + address);
     }
 }
