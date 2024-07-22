@@ -2,14 +2,19 @@ package BT_JavaOOP_2.person;
 
 public class Person {
 
- public String name = "Nguyen Lan Huong";
- public int age = 35;
- public String gender = "Female";
- private String address = "Hanoi";
- private String phone = "0354058398";
+ public String name;
+ public int age;
+ public String gender;
+ private String address;
+ private String phone ;
 
-    public Person() {
 
+    public Person(String name, int age, String gender, String address, String phone) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.address = address;
+        this.phone = phone;
     }
 
     public String getName() {
@@ -32,4 +37,11 @@ public class Person {
         return phone;
     }
 
+    protected void showInfo(){
+        System.out.println("Name: " + getName());
+        System.out.println("Age: " + getAge());
+        System.out.println("Gender: " + getGender());
+        System.out.println("Address: " + getAddress());
+        System.out.println("Phone: " + getPhone());
+    }
 }
